@@ -1,0 +1,15 @@
+{
+  "name": "@repo/store",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./useBalance": "./dist/hooks/useBalance.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "zustand": "^5.0.5"
+  }
+}

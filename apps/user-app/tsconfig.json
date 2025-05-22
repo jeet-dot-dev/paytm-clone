@@ -5,7 +5,11 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@repo/store/*" : ["../../packages/store/src/*"]
+    },
   },
   "include": [
     "**/*.ts",

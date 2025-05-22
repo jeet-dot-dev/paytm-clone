@@ -6,10 +6,7 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
-    "paths": {
-      "@repo/store/*" : ["../../packages/store/src/*"]
-    },
+    "baseUrl": "."
   },
   "include": [
     "**/*.ts",

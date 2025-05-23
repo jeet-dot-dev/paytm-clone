@@ -55,12 +55,12 @@ export const authOption = {
     }),
   ],
   secret: process.env.JWT_SECRET || "Jeet",
-  //   callbacks: {
-  //     async session({ token, session }: { token: JWT; session: Session }) {
-  //       if (session.user) {
-  //         session.user.id = token.sub!;
-  //       }
-  //       return session;
-  //     }
-  //   }
+    callbacks: {
+      async session({ token, session }: { token: JWT; session: Session }) {
+        if (session.user) {
+          session.user.id = token.sub!;
+        }
+        return session;
+      }
+    }
 };
